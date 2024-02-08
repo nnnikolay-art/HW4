@@ -102,7 +102,6 @@ public class PluginLoader
                         IPlugin pluginInstance = (IPlugin)Activator.CreateInstance(pluginType);
                         pluginQueue.Enqueue(pluginInstance);
                         Console.WriteLine("Плагин реализующий IPlugin обнаружен : " + pluginFile);
-                        //Thread.Sleep(1000); // Эиуляция долгой загрузки
                     }
                 }
                 catch (Exception ex)
